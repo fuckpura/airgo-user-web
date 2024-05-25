@@ -48,9 +48,9 @@ function getSubApps(backend_url: string, sub_uuid: string, sub_name: string) {
       name: 'Shadowrocket',
     },
     {
-      url: `surge://install-config?url=${sub_url}`,
-      img: '/images/subs/Surge.svg',
-      name: 'Surge',
+      url: `clash://install-config?url=${sub_url}&name=${sub_name}`,
+      img: '/images/subs/Clash Verge.svg',
+      name: 'Clash-verge-rev',
     },
     {
       url: `clash://install-config?url=${sub_url}`,
@@ -58,20 +58,30 @@ function getSubApps(backend_url: string, sub_uuid: string, sub_name: string) {
       name: 'NekoBox',
     },
     {
-      url: `quantumult-x:///add-resource?remote-resource=${sub_url}`,
-      img: '/images/subs/Quantumult X.svg',
-      name: 'Quantumult X',
+      url: `v2ray://install-config?url=${sub_url}`,
+      img: '/images/subs/V2rayN.svg',
+      name: 'V2rayN',
     },
-    {
-      url: `sing-box://import-remote-profile?url=${encodeURI(sub_url)}#${sub_name}`,
-      img: '/images/subs/Sing Box.svg',
-      name: 'Sing Box',
-    },
-    {
-      url: `clash://install-config?url=${sub_url}&name=${sub_name}`,
-      img: '/images/subs/Clash Verge.svg',
-      name: 'Clash',
-    },
+    // {
+    //   url: `surge://install-config?url=${sub_url}`,
+    //   img: '/images/subs/Surge.svg',
+    //   name: 'Surge',
+    // },
+    // {
+    //   url: `quantumult-x:///add-resource?remote-resource=${sub_url}`,
+    //   img: '/images/subs/Quantumult X.svg',
+    //   name: 'Quantumult X',
+    // },
+    // {
+    //   url: `sing-box://import-remote-profile?url=${encodeURI(sub_url)}#${sub_name}`,
+    //   img: '/images/subs/Sing Box.svg',
+    //   name: 'Sing Box',
+    // },
+    // {
+    //   url: `clash://install-config?url=${sub_url}&name=${sub_name}`,
+    //   img: '/images/subs/Clash Verge.svg',
+    //   name: 'Clash-verge-rev',
+    // },
   ];
 }
 
@@ -241,7 +251,7 @@ export default function User() {
                               }}
                             >
                               <Copy className='mr-2 size-5' />
-                              复制
+                              复制订阅链接
                             </span>
                           </div>
                         </AccordionTrigger>

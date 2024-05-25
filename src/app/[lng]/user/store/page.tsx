@@ -62,6 +62,10 @@ export default function Store() {
               price = item.price_12_month;
               unit = '年';
               break;
+            case '-1':
+              price = item.price_unlimited_duration;
+              unit = '年';
+              break;
           }
           return (
             <Card className='overflow-hidden' key={item.id}>
@@ -143,11 +147,14 @@ export default function Store() {
           <TabsTrigger value='12' className='relative'>
             年付
           </TabsTrigger>
+          <TabsTrigger value='-1' className='relative'>
+            不限时
+          </TabsTrigger>
         </TabsList>
         <TabsContent value='1'>{getTabContent('1')}</TabsContent>
         <TabsContent value='3'>{getTabContent('3')}</TabsContent>
         <TabsContent value='6'>{getTabContent('6')}</TabsContent>
-        <TabsContent value='12'>{getTabContent('12')}</TabsContent>
+        <TabsContent value='-1'>{getTabContent('-1')}</TabsContent>
       </Tabs>
       {loading && <Loading />}
       <BuyDialog order={order} setOrder={setOrder} loading={loading} setLoading={setLoading} />
