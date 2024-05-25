@@ -25,8 +25,8 @@ export default function Login({ params: { lng } }: { params: { lng: string } }) 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      user_name: 'admin@oicq.com',
-      password: 'test',
+      user_name: '',
+      password: '',
     },
   });
 
