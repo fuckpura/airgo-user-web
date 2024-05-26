@@ -152,7 +152,7 @@ export default function Tickets() {
                       name='details'
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>标题</FormLabel>
+                          <FormLabel>内容</FormLabel>
                           <FormControl>
                             <Textarea className='resize-none' {...field} />
                           </FormControl>
