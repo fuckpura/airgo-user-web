@@ -30,5 +30,6 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#FFFFFF"
+  "theme_color": "#FFFFFF",
+  "description": "High-quality network interconnection from the world to mainland China"
 }
