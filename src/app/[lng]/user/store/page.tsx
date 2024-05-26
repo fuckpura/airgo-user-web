@@ -64,7 +64,7 @@ export default function Store() {
               break;
             case '-1':
               price = item.price_unlimited_duration;
-              unit = '年';
+              unit = '不限时';
               break;
           }
           return (
@@ -154,6 +154,7 @@ export default function Store() {
         <TabsContent value='1'>{getTabContent('1')}</TabsContent>
         <TabsContent value='3'>{getTabContent('3')}</TabsContent>
         <TabsContent value='6'>{getTabContent('6')}</TabsContent>
+        <TabsContent value='12'>{getTabContent('12')}</TabsContent>
         <TabsContent value='-1'>{getTabContent('-1')}</TabsContent>
       </Tabs>
       {loading && <Loading />}
