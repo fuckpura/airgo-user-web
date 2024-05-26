@@ -50,7 +50,7 @@ export default function WalletBalance() {
           <TableRow>
             <TableHead>标题</TableHead>
             <TableHead className='text-center'>金额</TableHead>
-            <TableHead className='text-center'>余额</TableHead>
+            <TableHead className='text-center'>最终余额</TableHead>
             <TableHead className='text-right'>创建时间</TableHead>
           </TableRow>
         </TableHeader>

@@ -56,11 +56,11 @@ export default function WalletCommission() {
         <TableBody>
           {dataSource.map((item) => (
             <TableRow key={item.id}>
-              <TableCell>{item.title}</TableCell>
-              <TableCell className='text-center'>{item.user_name}</TableCell>
-              <TableCell className='text-center'>{item.amount}</TableCell>
+              <TableCell>{item.subject}</TableCell>
+              <TableCell className='text-center'>{item.order_user_name}</TableCell>
+              <TableCell className='text-center'>{item.commission}</TableCell>
               <TableCell className='text-right'>
-                {format(new Date(item.create_time), 'yyyy-MM-dd HH:mm:ss')}
+                {format(new Date(item.created_at), 'yyyy-MM-dd HH:mm:ss')}
               </TableCell>
             </TableRow>
           ))}
