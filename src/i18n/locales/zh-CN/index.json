@@ -2,7 +2,7 @@
   "compared": {
     "1": "完全加载 Github 耗时",
     "2": "完全加载 Zoom 耗时",
-    "3": "Speedtest.net 单线程下载",
+    "3": "Speedtest.net 单链接下载",
     "4": "延迟",
     "after": "加速后",
     "before": "加速前"

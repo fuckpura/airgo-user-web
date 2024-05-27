@@ -1,10 +1,10 @@
 import { Metadata, Viewport } from 'next';
 import { languages } from '@/i18n';
-import { SITE_URL } from './constants';
+import { SITE_NAME, SITE_URL } from './constants';
 
 export const metadata: Metadata = {
   title: {
-    default: 'AirGo | AirGo Panel',
+    default: SITE_NAME,
     template: 'AirGo | %s | AirGo Panel',
   },
   keywords: ['AirGo', 'AirGo Panel'],
