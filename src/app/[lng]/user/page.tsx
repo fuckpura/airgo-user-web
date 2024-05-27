@@ -234,7 +234,7 @@ export default function User() {
                 <Separator />
                 <Accordion type='single' collapsible defaultValue='0' className='w-full'>
                   {config?.backend_url?.map((url: string, index: number) => {
-                    const subAddress = `${url}/api/public/sub/${item.sub_uuid.replace(/-/g, '')}/${config.sub_name}`;
+                    const subAddress = `${url}/api/public/sub/${item.sub_uuid.replace(/-/g, '')}/${config.sub_name + '-' + item.subject}`;
                     return (
                       <AccordionItem value={index.toString()} key={index}>
                         <AccordionTrigger>
