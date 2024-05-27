@@ -180,7 +180,7 @@ export default function User() {
                       </AlertDialogFooter>
                     </AlertDialogContent>
                   </AlertDialog>
-                  {item.is_renew && (
+                  {/* {item.is_renew && (
                     <Button
                       size='sm'
                       onClick={async () => {
@@ -193,7 +193,7 @@ export default function User() {
                     >
                       续费
                     </Button>
-                  )}
+                  )} */}
                 </div>
               </CardHeader>
               <div className='grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-5'>
