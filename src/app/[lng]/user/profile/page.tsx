@@ -60,7 +60,7 @@ export default function Profile({ params: { lng } }: { params: { lng: string } }
     }
   }
 
-  const [tg_id, setTgId] = useState('');
+  const [tg_id, setTgId] = useState(0);
 
   return (
     <div className='grid gap-4 lg:grid-cols-2'>
