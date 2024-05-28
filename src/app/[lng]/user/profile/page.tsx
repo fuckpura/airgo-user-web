@@ -86,9 +86,9 @@ export default function Profile({ params: { lng } }: { params: { lng: string } }
               <li className='flex items-center justify-between'>
                 <Input
                   placeholder='Telegram ID'
-                  defaultValue={userInfo?.tg_id || ''}
+                  defaultValue={userInfo?.tg_id || 0}
                   onChange={(e) => {
-                    setTgId(e.target.value);
+                    setTgId(Number(e.target.value));
                   }}
                 />
                 <Button
