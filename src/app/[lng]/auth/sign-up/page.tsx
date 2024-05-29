@@ -75,6 +75,7 @@ export default function SignUp({ params: { lng } }: { params: { lng: string } })
         b64s: data.captcha,
         id: Captcha.data?.id,
       },
+      referrer_code: data.referrer_code,
     });
     if (result.data.code === 0) {
       toast.success('注册成功');
