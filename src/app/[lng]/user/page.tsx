@@ -137,7 +137,8 @@ export default function User() {
           <BellRing className='size-5 text-muted-foreground' />
         </CardHeader>
         <CardContent className='pt-4 text-sm text-muted-foreground'>
-          {data?.find((item: { type: string }) => item.type === 'dialog')?.content || '暂无公告'}
+          {(data?.find((item: { type: string }) => item.type === 'dialog')?.content || '暂无公告').replace(/\r\n/g, '\n')
+      .replace(/\r/g, '\n')}
         </CardContent>
       </Card>
       {CustomerServiceList.data.length > 0 ? (
